@@ -1,15 +1,33 @@
+/* Write your code at the bottom */
+
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
+  padding: 0;
+}
+.header-logo {
+  float: left;
+  color: white;
+  font-size: 36px;
+  /* Change the top & bottom padding to 20px, and left & right padding to 40px */
+  padding: 10px 20px;
+
+}
+body {
   font-family: "Lucida Grande";
 }
 
 a {
   text-decoration: none;
 }
+
+
+
 
 .clear {
   clear: left;
@@ -23,7 +41,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
   background-size: cover;
   color: white;
   text-align: center;
@@ -31,7 +49,7 @@ a {
 
 .top-wrapper h1 {
   opacity: 0.7;
-  font-size: 45px;
+  font-size:45px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
@@ -116,19 +134,11 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
 .lesson-wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 15px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f7f7f7;
+  background-color: #f7d794;
   text-align: center;
 }
 
@@ -144,11 +154,17 @@ header {
 
 .lesson {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 
 .lesson-icon {
   position: relative;
+  padding-top: 10px;
+  opacity: 0.75;
+}
+
+.lesson-icon:hover {
+  opacity: 1;
 }
 
 .lesson-icon p {
@@ -163,7 +179,12 @@ header {
   display: inline-block;
   margin-top: 15px;
   font-size: 15px;
-  color: #b3aeb5;
+  color: #2C3A47;
+  opacity: 0.95;
+}
+
+.text-contents:hover {
+  opacity: 1;
 }
 
 .heading h3 {
@@ -171,9 +192,14 @@ header {
 }
 
 .message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
   text-align: center;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
 }
 
 .message {
@@ -181,6 +207,9 @@ header {
   background-color: #5dca88;
   cursor: pointer;
   box-shadow: 0 7px #1a7940;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .message:active {
@@ -189,16 +218,82 @@ header {
   box-shadow: none;
 }
 
+/* Write your code below */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+footer {
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 10;
+}
+
+.row-left {
+  padding-top: 20px;
+  float: left;
+  text-align: left;
+}
+
+.row-left h3 {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 120px;
+  font-size: 30px;
+}
+
+.row-left p{
+  text-align: left;
+  padding-bottom: 1px;
+  padding-left: 120px;
+  font-size: 15px;
+}
+
+.copyright {
+  padding-top: 5px;
+}
+
+.row-right {
+  float: right;
+  text-align: left;
+  padding-top: 20px;
+  padding-right: 250px;
+}
+
+.row-right h3  {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+.row-right p {
+  text-align: left;
+  padding-bottom: 1px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+
+.container-bottom {
+  padding-top: 140px;
+  text-align: center;
+}
+
 footer img {
   width: 125px;
+  text-align: center;
 }
 
 footer p {
   color: #b3aeb5;
   font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  text-align: center;
 }
